@@ -1,0 +1,47 @@
+<h3>Update Employee</h3>
+<div style="width: 400px;">
+  <form [formGroup]="addEmployeeForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" 
+      class="form-control" 
+      id="name"
+      formControlName="name"
+       required name="name">
+    </div>
+    <div formGroupName="address">
+      <div class="form-group">
+        <label for="name">City</label>
+        <input type="text"
+         class="form-control"
+          id="city" 
+          required
+          formControlName="city"
+           name="city">
+      </div>
+  
+      <div class="form-group">
+        <label for="name">State</label>
+        <input type="text"
+         class="form-control"
+          id="state"
+           required 
+           formControlName="state"
+           name="state">
+      </div>
+      <div class="form-group">
+        <label for="name">Street</label>
+        <input type="text"
+         class="form-control"
+          id="street"
+           required 
+           formControlName="street"
+            name="street">
+      </div>
+  
+    </div>
+   
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
